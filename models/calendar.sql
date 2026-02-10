@@ -279,7 +279,7 @@ with
             end as pycurrentytd,
             case
                 when
-                    calendardate >= dateadd(month, 3, lastyear)
+                    calendardate >= dateadd(month, 3, dateadd(year, -1, lastyear))
                     and calendardate <= lastyearytd - 1
                 then 1
                 else 0
