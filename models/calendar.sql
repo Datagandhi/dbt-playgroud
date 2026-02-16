@@ -245,7 +245,7 @@ with
                 else 0
             end as pycurrentwtd,
             case
-                when calendardate >= pycurrentweek and calendardate <= pycurrentdate - 1
+                when calendardate >= date_trunc(week, pycurrentdate - 1) and calendardate <= pycurrentdate - 1
                 then 1
                 else 0
             end as pycurrentwtdreporting,
