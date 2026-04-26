@@ -177,7 +177,7 @@ with
             end as iscurrentyear,
             case
                 when
-                    calendardate >= dateadd(month, 3, lastyear)
+                    calendardate >= dateadd(month, 3, date_trunc(year, dateadd(month, -3, currentdate)))
                     and calendardate <= currentdate - 1
                 then 1
                 else 0
@@ -279,7 +279,7 @@ with
             end as pycurrentytd,
             case
                 when
-                    calendardate >= dateadd(month, 3, dateadd(year, -1, lastyear))
+                    calendardate >= dateadd(month, 3, dateadd(year, -1, date_trunc(year, dateadd(month, -3, currentdate))))
                     and calendardate <= lastyearytd - 1
                 then 1
                 else 0
