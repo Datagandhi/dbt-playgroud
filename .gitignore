@@ -3,3 +3,6 @@
 target/
 dbt_packages/
 logs/
+dbt-core-uv/
+dbt_internal_packages/
+layering-pattern/
