@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: coingecko
+    database: lakehouse
+    schema: dbo
+    tables:
+      - name: raw_coin_details
+      - name: raw_coins
+      - name: raw_market_data
