@@ -6,3 +6,6 @@ logs/
 dbt-core-uv/
 dbt_internal_packages/
 layering-pattern/
+coingecko_staging/
+*.duckdb
+*.duckdb.wal
