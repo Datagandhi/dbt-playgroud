@@ -2,9 +2,117 @@ version: 2
 
 sources:
   - name: coingecko
+    description: ""
     database: lakehouse
     schema: dbo
     tables:
       - name: raw_coin_details
-      - name: raw_coins
+        description: ""
+        columns:
+          - name: coin_id
+            data_type: varchar
+            description: ""
+          - name: symbol
+            data_type: varchar
+            description: ""
+          - name: name
+            data_type: varchar
+            description: ""
+          - name: description
+            data_type: varchar
+            description: ""
+          - name: genesis_date
+            data_type: varchar
+            description: ""
+          - name: hashing_algorithm
+            data_type: varchar
+            description: ""
+          - name: categories
+            data_type: varchar
+            description: ""
+          - name: homepage_url
+            data_type: varchar
+            description: ""
+          - name: subreddit_url
+            data_type: varchar
+            description: ""
+          - name: developer_score
+            data_type: float
+            description: ""
+          - name: community_score
+            data_type: float
+            description: ""
+          - name: liquidity_score
+            data_type: float
+            description: ""
+          - name: _loaded_at
+            data_type: datetime2
+            description: ""
+          - name: _snapshot_date
+            data_type: varchar
+            description: ""
+            
       - name: raw_market_data
+        description: ""
+        columns:
+          - name: coin_id
+            data_type: varchar
+            description: ""
+          - name: symbol
+            data_type: varchar
+            description: ""
+          - name: name
+            data_type: varchar
+            description: ""
+          - name: current_price_usd
+            data_type: float
+            description: ""
+          - name: market_cap_usd
+            data_type: float
+            description: ""
+          - name: market_cap_rank
+            data_type: int
+            description: ""
+          - name: total_volume_usd
+            data_type: float
+            description: ""
+          - name: circulating_supply
+            data_type: float
+            description: ""
+          - name: total_supply
+            data_type: float
+            description: ""
+          - name: max_supply
+            data_type: float
+            description: ""
+          - name: ath_usd
+            data_type: float
+            description: ""
+          - name: ath_date
+            data_type: varchar
+            description: ""
+          - name: atl_usd
+            data_type: float
+            description: ""
+          - name: atl_date
+            data_type: varchar
+            description: ""
+          - name: price_change_pct_24h
+            data_type: float
+            description: ""
+          - name: price_change_pct_7d
+            data_type: float
+            description: ""
+          - name: price_change_pct_30d
+            data_type: float
+            description: ""
+          - name: last_updated
+            data_type: varchar
+            description: ""
+          - name: _loaded_at
+            data_type: datetime2
+            description: ""
+          - name: _snapshot_date
+            data_type: varchar
+            description: ""
+

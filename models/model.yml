@@ -1,0 +1,112 @@
+version: 2
+
+models:
+  - name: stg_coingecko__coin_details
+    description: ""
+    columns:
+      - name: coin_id
+        data_type: varchar
+        description: ""
+
+      - name: coin_symbol
+        data_type: varchar
+        description: ""
+
+      - name: coin_name
+        data_type: varchar
+        description: ""
+
+      - name: coin_description
+        data_type: varchar
+        description: ""
+
+      - name: coin_genesis_date
+        data_type: date
+        description: ""
+
+      - name: coin_categories_raw
+        data_type: varchar
+        description: ""
+
+  - name: stg_coingecko__market_data
+    description: ""
+    columns:
+      - name: coin_id
+        data_type: varchar
+        description: ""
+
+      - name: coin_symbol
+        data_type: varchar
+        description: ""
+
+      - name: coin_name
+        data_type: varchar
+        description: ""
+
+      - name: current_price_usd
+        data_type: decimal
+        description: ""
+
+      - name: market_cap_usd
+        data_type: bigint
+        description: ""
+
+      - name: market_cap_rank
+        data_type: int
+        description: ""
+
+      - name: total_volume_usd
+        data_type: bigint
+        description: ""
+
+      - name: circulating_supply
+        data_type: decimal
+        description: ""
+
+      - name: total_supply
+        data_type: decimal
+        description: ""
+
+      - name: max_supply
+        data_type: decimal
+        description: ""
+
+      - name: ath_usd
+        data_type: float
+        description: ""
+
+      - name: ath_date
+        data_type: datetime2
+        description: ""
+
+      - name: atl_usd
+        data_type: float
+        description: ""
+
+      - name: atl_date
+        data_type: datetime2
+        description: ""
+
+      - name: price_change_pct_24h
+        data_type: float
+        description: ""
+
+      - name: price_change_pct_7d
+        data_type: float
+        description: ""
+
+      - name: price_change_pct_30d
+        data_type: float
+        description: ""
+
+      - name: last_updated
+        data_type: datetime2
+        description: ""
+
+      - name: loaded_at
+        data_type: datetime2
+        description: ""
+
+      - name: snapshot_date
+        data_type: datetime2
+        description: ""
